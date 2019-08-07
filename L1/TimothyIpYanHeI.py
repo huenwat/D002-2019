@@ -2,5 +2,11 @@ Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 22:20:52) [MSC v.1916 32 bit 
 Type "help", "copyright", "credits" or "license()" for more information.
 >>> print("Hallo World")
 Hallo World
->>> 
->>> 
+print("Hallo")
+print("world")
+Hallo
+World
+print("Ha llo")
+print("wo rld")
+Ha llo
+Wo rld
