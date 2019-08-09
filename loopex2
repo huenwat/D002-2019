@@ -1,0 +1,12 @@
+a = int(input("what is the first number?\n"))
+b = int(input("what is the first number?\n"))
+c = int(input("what is the first number?\n"))
+d = int(input("what is the first number?\n"))
+e = int(input("what is the first number?\n"))
+f = int(input("what is the first number?\n"))
+m = a
+for n in (a,b,c,d,e,f):
+    if n > m:
+        m = n
+print m
+
