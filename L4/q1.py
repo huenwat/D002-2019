@@ -55,12 +55,14 @@ while True:
     print("You are now watching %s" % c[c_c])
     a = int(input("Please choose either U/D/O\n"))
     if a == 1:
-        c_c = c_c + 1
+        c_c = (c_c + 1)%len(c)
+            
     elif a == 2:
-        c_c = c_c - 1
+        c_c = (c_c - 1) % len(c)
     elif a == 3:
         break
 print("you turn off the TV")
+
     # may be some more code
 
 
