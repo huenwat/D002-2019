@@ -54,38 +54,52 @@ m = randint(1,3)
 
 
 # step4: display the minion's choice
-if p == 3:
-    if m == 1:
-        print("Minion chooses rock!")
-        print("minion wins")
-    elif m == 2:
-        print("Minion chooses paper!")
-        print("minion lose")
-    elif m == 3:
-        print("Minion chooses scissor!")
-        print("minion tie")
+while(w<3):
+    if p == 3:
+        if m == 1:
+            print("Minion chooses rock!")
+            print("minion wins")
+            w=o
+            break
+        elif m == 2:
+            print("Minion chooses paper!")
+            print("minion lose")
+            w=w+1
+        elif m == 3:
+            print("Minion chooses scissor!")
+            print("minion tie")
+            w=w
 
-elif p == 2:
-    if m == 1:
-        print("Minion chooses rock!")
-        print("minion lose")
-    elif m == 2:
-        print("Minion chooses paper!")
-        print("minion tie")
-    elif m == 3:
-        print("Minion chooses scissor!")
-        print("minion wins")
+    elif p == 2:
+        if m == 1:
+            print("Minion chooses rock!")
+            print("minion lose")
+            w=w+1
+        elif m == 2:
+            print("Minion chooses paper!")
+            print("minion tie")
+            w=w
+        elif m == 3:
+            print("Minion chooses scissor!")
+            print("minion wins")
+            w=o
+            break
 
-elif p == 1:
-    if m == 1:
-        print("Minion chooses rock!")
-        print("minion tie")
-    elif m == 2:
-        print("Minion chooses paper!")
-        print("minion wins")
-    elif m == 3:
-        print("Minion chooses scissor!")
-        print("minion lose")
-else:
-    print("please enter the correct no.")
-    print("(1 for rock; 2 for paper; 3 for scissor)")
+    elif p == 1:
+        if m == 1:
+            print("Minion chooses rock!")
+            print("minion tie")
+            w=w
+        elif m == 2:
+            print("Minion chooses paper!")
+            print("minion wins")
+            w=o
+            break
+        elif m == 3:
+            print("Minion chooses scissor!")
+            print("minion lose")
+            w=w+1
+    else:
+        print("please enter the correct no.")
+        print("(1 for rock; 2 for paper; 3 for scissor)")
+        w=w
