@@ -7,3 +7,6 @@ def factors(n):
     return(result)
 a=int(input("positive no.:"))
 print(factors(a))
+print("is both factors of %d" % a )
+if int(5) in (factors(a)):
+    print("5 is the factor of %d" % a)
