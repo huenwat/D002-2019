@@ -1,4 +1,3 @@
-
 l=[]
 for e in range(0,10):
     a=int(input("please enter a number:\t"))
@@ -9,9 +8,11 @@ print(l)
 for i in l:
     for j in p:
         if (j-i)<m and (j-i)>0 and m==9999999999999999:
-            m = (i-j)
+            m = (j-i)
+            print(j,i)
         elif (i-j)<m and (i-j)>0 and m==9999999999999999:
             m = (i-j)
+            print(i,j)
         else:
             m = m
 print(m)
